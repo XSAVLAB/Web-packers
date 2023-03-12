@@ -1,0 +1,113 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(199, 100%, 33%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.about .secContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about .secContainer .mainContent {
+  gap: 1rem;
+}
+.about .secContainer .mainContent .singleItem {
+  text-align: center;
+}
+.about .secContainer .mainContent .singleItem img {
+  background: rgba(247, 144, 54, 0.264);
+  width: 100px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.about .secContainer .mainContent .singleItem h3 {
+  font-weight: 700;
+  color: var(--blackColor);
+  padding: 0.5rem;
+}
+.about .secContainer .mainContent .singleItem p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.about .secContainer .videoCard {
+  margin-top: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url(../../Assets/img16.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .secContainer .videoCard .cardContent {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about .secContainer .videoCard .cardContent .cardText h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.about .secContainer .videoCard .cardContent .cardText p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about .secContainer .videoCard .cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .secContainer .videoCard .cardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .secContainer .footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.about .secContainer .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.about .secContainer .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+}
+.about .secContainer .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+}
+.about .secContainer .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+}
+.about .secContainer .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}/*# sourceMappingURL=service2.css.map */

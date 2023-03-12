@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import video from "../../Assets/video2.mp4";
 import { GrLocation } from "react-icons/gr";
@@ -9,20 +9,13 @@ import { BsTwitter } from "react-icons/bs";
 import { BsListUl } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'  
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
-
-useEffect(()=>{
-    Aos.init({duration:2000})
-},[])
-
-
-
-
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <section className="home">
@@ -32,10 +25,13 @@ useEffect(()=>{
 
       <div className="homeContent container">
         <div className="textDiv">
+          <span data-aos="fade-up" className="smallText">
+            Our packages
+          </span>
 
-          <span data-aos="fade-up" className="smallText">Our packages</span>
-
-          <h1 data-aos="fade-right" className="homeTitle">Search Anything</h1>
+          <h1 data-aos="fade-right" className="homeTitle">
+            Search Anything
+          </h1>
         </div>
 
         <div data-aos="fade-up" className="cardDiv grid">
@@ -72,16 +68,14 @@ useEffect(()=>{
 
         <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcons">
-            <FiFacebook className="icon"/>
-            <AiOutlineInstagram className="icon"/>
-            <BsTwitter className="icon"/>
-          </div>  
+            <FiFacebook className="icon" />
+            <AiOutlineInstagram className="icon" />
+            <BsTwitter className="icon" />
+          </div>
 
           <div className="leftsIcons">
-          <BsListUl className="icon"/>
-          <TbApps className="icon"/>
-
-
+            <BsListUl className="icon" />
+            <TbApps className="icon" />
           </div>
         </div>
       </div>

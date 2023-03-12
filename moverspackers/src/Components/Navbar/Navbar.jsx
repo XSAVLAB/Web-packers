@@ -3,6 +3,9 @@ import "./navbar.css";
 import { TbTruckDelivery } from "react-icons/tb";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import { NavLink } from "react-router-dom";
+import Service from "../Service/Service";
+import { Switch, Route } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBar");
@@ -20,44 +23,38 @@ const Navbar = () => {
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href="#" className="logo flex">
+          <NavLink to="#" className="logo flex">
             <h1>
               <TbTruckDelivery className="icon" />
-              Movers & Packers
+              Happy Packers & Movers
             </h1>
-          </a>
+          </NavLink>
         </div>
 
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="#" className="navLink">
-                Home
-              </a>
+              <NavLink to="/" className="navLink">Home</NavLink>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">
-                Services
-              </a>
+              <NavLink to="/service" className="navLink">Service</NavLink>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">
-                About us
-              </a>
+              <NavLink to="/aboutUs" className="navLink">About us</NavLink>
             </li>
+            {/* <Switch>
+              <Route> */}
             <li className="navItem">
-              <a href="#" className="navLink">
-                Pages
-              </a>
+              <NavLink to="/pages" className="navLink">Pages</NavLink>
             </li>
+            {/* </Route>
+            </Switch> */}
             <li className="navItem">
-              <a href="#" className="navLink">
-                Contacts
-              </a>
+              <NavLink to="/contacts" className="navLink">Contacts</NavLink>
             </li>
 
             <button className="btn">
-              <a href="#">Book Now</a>
+              <a to="#">Book Now</a>
             </button>
           </ul>
 
