@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="logoDiv">
               <a href="#" className="logo flex">
                 <TbTruckDelivery className="icon" />
-                Happy Packes and Movers.
+                Welcome Packes and Movers.
               </a>
             </div>
 

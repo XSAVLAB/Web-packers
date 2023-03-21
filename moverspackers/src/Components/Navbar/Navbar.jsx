@@ -26,7 +26,7 @@ const Navbar = () => {
           <NavLink to="#" className="logo flex">
             <h1>
               <TbTruckDelivery className="icon" />
-              Happy Packers & Movers
+              Welcome Packers & Movers
             </h1>
           </NavLink>
         </div>
