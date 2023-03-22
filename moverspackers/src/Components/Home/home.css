@@ -59,20 +59,40 @@
 }
 .home .homeContent .textDiv {
   padding: 2rem 0;
+  text-align: center;
 }
 .home .homeContent .textDiv .smallText {
   font-size: 13px;
   text-transform: uppercase;
+  color: var(--textColor);
 }
 .home .homeContent .textDiv .homeTitle {
   position: relative;
-  font-size: 1.8rem;
+  font-size: 3.2rem;
+  text-align: center;
+  transition: 2s ease;
+  text-transform: uppercase;
+}
+.home .homeContent .textDiv h2 {
+  position: relative;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--greyText);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  transition: 2s ease;
+}
+.home .homeContent .textDiv p {
+  position: relative;
+  text-align: center;
+  color: var(--whiteColorDeam);
+  transition: 2s ease;
 }
 .home .homeContent .cardDiv {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background: var(--whiteColor);
-  border-radius: 10px;
+  border-radius: 5px;
   gap: 1rem;
 }
 .home .homeContent .cardDiv label {
