@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="contactDiv flex">
           <div data-aos="fade-up" className="text">
             <small>KEEP IN TOUCH</small>
-            <h2>Travel with us</h2>
+            <h2>Pack & Move With Us</h2>
           </div>
 
           <div className="inputDiv flex">
@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="logoDiv">
               <a href="#" className="logo flex">
                 <TbTruckDelivery className="icon" />
-                Welcome Packes and Movers.
+                Welcome Packers and Movers.
               </a>
             </div>
 

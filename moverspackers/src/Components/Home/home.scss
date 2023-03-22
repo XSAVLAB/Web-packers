@@ -59,23 +59,43 @@
 
     .textDiv {
       padding: 2rem 0;
+      text-align: center;
 
       .smallText {
         font-size: 13px;
         text-transform: uppercase;
+        color: var(--textColor);
       }
 
       .homeTitle {
         position: relative;
-        font-size: 1.8rem;
+        font-size: 3.2rem;
+        text-align: center;
+        transition: 2s ease;
+        text-transform: uppercase;
+      }
+      h2 {
+        position: relative;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--greyText);
+        padding-top: 20px;
+        padding-bottom: 50px;
+        transition: 2s ease;
+      }
+      p {
+        position: relative;
+        text-align: center;
+        color: var(--whiteColorDeam);
+        transition: 2s ease;
       }
     }
 
     .cardDiv {
       position: relative;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       background: var(--whiteColor);
-      border-radius: 10px;
+      border-radius: 5px;
       gap: 1rem;
 
       label {
@@ -196,55 +216,50 @@
         }
       }
 
-      .cardDiv{
-        grid-template-columns: repeat(2,1fr);
+      .cardDiv {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
 }
 
 @media screen and (mid-width: 660px) {
-  .home{
-    .homeContent{
-      .cardDiv{
+  .home {
+    .homeContent {
+      .cardDiv {
         padding: 2rem 1rem;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
-  
 }
-
 
 @media screen and (mid-width: 940px) {
-  .home{
+  .home {
     height: 85vh;
   }
-  
 }
 
-
 @media screen and (mid-width: 1240px) {
-  .home{
+  .home {
     height: 95vh;
-     
-    .homeContent{
+
+    .homeContent {
       padding-left: 0;
       padding-right: 0;
 
-      .cardDiv{
+      .cardDiv {
         padding: 2rem 1rem;
-        grid-template-columns: repeat(3,1fr);
-        .input{
+        grid-template-columns: repeat(3, 1fr);
+        .input {
           margin-bottom: 1rem;
         }
 
-        .searchOptions{
+        .searchOptions {
           bottom: -1rem;
           padding: 8px 1rem;
         }
       }
     }
   }
-  
 }
