@@ -27,6 +27,8 @@
   color: var(--textColor);
   margin: 1rem 0;
   z-index: 2;
+  font-size: 1.6rem;
+  transition: 2s ease;
 }
 .main .secTitle .title::after {
   position: absolute;
@@ -58,7 +60,7 @@
   transition: 0.3s ease;
 }
 .main .secContent .singleDestination .imageDiv {
-  height: 180px;
+  height: 280px;
   width: 100%;
   overflow: hidden;
 }

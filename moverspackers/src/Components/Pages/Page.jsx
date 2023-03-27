@@ -55,7 +55,7 @@ const Page = () => {
 
 
   return (
-    <section className="main container section">
+    <section className="page container section">
       <div className="secTitle">
         <h1 data-aos="fade-right" className="title">Gallary</h1>
       </div>

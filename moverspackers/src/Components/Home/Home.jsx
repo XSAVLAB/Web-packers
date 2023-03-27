@@ -25,18 +25,28 @@ const Home = () => {
 
       <div className="homeContent container">
         <div className="textDiv">
-          <span data-aos="fade-up" className="smallText">
-            Our packages
+        <span data-aos="fade-up" className="smallText">
+            A complete household transformation
           </span>
 
           <h1 data-aos="fade-right" className="homeTitle">
-            Search Anything
+            Lets Pack & Move with Welcome Packers & Movers 
           </h1>
+          <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Were !!!</h2>
+         <p data-aos="fade-up">
+          Shop No.25/24,Opp.HDFC Bank
+         </p>
+         <p data-aos="fade-up">
+          Hinjewadi Rajiv Gandhi Infotech Park,Hinjewadi,
+         </p>
+         <p data-aos="fade-up">
+          Pune,Maharashtra- 411057
+         </p>
         </div>
 
-        <div data-aos="fade-up" className="cardDiv grid">
+        {/* <div data-aos="fade-up" className="cardDiv grid">
           <div className="destinationInput">
-            <label htmlFor="city">Search your product</label>
+            <label htmlFor="city">Our Address Is</label>
             <div className="input flex">
               <input type="text" placeholder="Enter name here..." />
               <GrLocation className="icon" />
@@ -64,7 +74,7 @@ const Home = () => {
             <HiFilter className="icon" />
             <span>MORE FILTERS</span>
           </div>
-        </div>
+        </div> */}
 
         <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcons">

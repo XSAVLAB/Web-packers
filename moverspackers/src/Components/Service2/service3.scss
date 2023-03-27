@@ -16,7 +16,7 @@
     --cardBG: rgb(225, 225, 235);
   }
   
-  .footer {
+  .service {
     width: 100%;
     position: relative;
     padding: 2rem 0;
@@ -112,9 +112,9 @@
         }
       }
   
-      .footerCard {
+      .serviceCard {
         position: relative;
-        padding: 2rem 2rem 4rem;
+        padding: 4rem 4rem 4rem;
         gap: 2rem;
         border-radius: 1rem;
         background: var(--bodyColor);
@@ -124,7 +124,7 @@
         align-items: flex-start;
         overflow: hidden;
   
-        .footerIntro {
+        .serviceIntro {
           flex-basis: 50%;
           justify-content: 50%;
           align-items: flex-start;
@@ -145,12 +145,12 @@
           }
         }
   
-        .footerParagraph {
+        .serviceParagraph {
           font-size: 25px;
           color: var(--blackColor);
         }
   
-        .footerSocials {
+        .serviceSocials {
           column-gap: 0.5rem;
   
           .icon {
@@ -163,11 +163,11 @@
           }
         }
   
-        .footerLinks {
+        .serviceLinks {
           flex-basis: 50%;
           width: 100%;
           gap: 1rem;
-          grid-template-columns: repeat(6, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           justify-content: space-between;
   
           .linkGroup {
@@ -178,7 +178,7 @@
               margin-bottom: 0.5rem;
             }
   
-            .footerList {
+            .serviceList {
               font-size: 15px;
               color: var(--textColor);
               transition: 0.3s ease-in-out;
@@ -200,7 +200,7 @@
           }
         }
   
-        .footerDiv {
+        .serviceDiv {
           flex-direction: column;
           position: absolute;
           bottom: 0;
@@ -221,15 +221,15 @@
   //Media queries
   
   @media screen and (mid-width: 500px) {
-    .footer {
+    .service {
       .secContent {
-        .footerCard {
-          .footerLinks {
+        .serviceCard {
+          .serviceLinks {
             grid-template-columns: repeat(3, 1fr);
             padding-bottom: 1rem;
           }
   
-          .footerDiv {
+          .serviceDiv {
             justify-content: space-between;
             flex-direction: row;
   
@@ -244,7 +244,7 @@
   }
   
   @media screen and (mid-width: 660px) {
-    .footer {
+    .service {
       .secContent {
         .contactDiv {
           flex-direction: row;
@@ -269,13 +269,13 @@
   }
   
   @media screen and (mid-width: 840px) {
-    .footer {
+    .service {
       padding: 5rem 0;
       .secContent {
-        .footerCard {
+        .serviceCard {
           flex-direction: row;
   
-          .footerLinks {
+          .serviceLinks {
             grid-template-columns: repeat(3, 1fr);
             padding-bottom: 1rem;
           }
@@ -285,18 +285,18 @@
   }
   
   @media screen and (mid-width: 1024px) {
-    .footer {
+    .service {
       .secContent {
-        .footerCard {
+        .serviceCard {
           padding: 3rem 1rem;
   
-          .footerIntro {
-            .footerParagraph {
+          .serviceIntro {
+            .serviceParagraph {
               font-size: 15px;
               color: var(--textColor);
             }
   
-            .footerSocials {
+            .serviceSocials {
               column-gap: 0.5rem;
               .icon {
                 color: var(--textColor);
@@ -308,9 +308,9 @@
             }
           }
   
-          .footerLinks {
+          .serviceLinks {
             .linkGroup {
-              .footerList {
+              .serviceList {
                 font-size: 16px;
                 padding: 5px 0;
               }

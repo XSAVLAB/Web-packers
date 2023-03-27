@@ -1,4 +1,5 @@
 import React from "react";
+// import "./chatBot.css";
 import ChatBot from "react-simple-chatbot";
 import { Segment } from "semantic-ui-react";
 
@@ -41,7 +42,6 @@ const steps = [
     ],
   },
 
-
   {
     id: "React",
     message: "Thanks for your react issue",
@@ -52,15 +52,17 @@ const steps = [
     id: "Angular",
     message: "Thanks for your angular issue",
     end: true,
-  }
+  },
 ];
 
 const App = () => {
   return (
-    <Segment floated="left">
-      <ChatBot steps={steps} />
-    </Segment>
+    <section className="chatBot">
+      <Segment >
+        <ChatBot steps={steps} />
+      </Segment>
+    </section>
   );
 };
 
-export default App ;
+export default App;

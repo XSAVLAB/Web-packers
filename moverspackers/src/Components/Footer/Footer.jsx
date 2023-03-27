@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "./footer.css";
+import "./footer.css";  
 import video from "../../Assets/video2.mp4";
 
 import { FiSend } from "react-icons/fi";

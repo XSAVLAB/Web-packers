@@ -37,7 +37,7 @@
 .header .logo .icon {
   font-size: 25px;
   color: var(--PrimaryColor);
-  transform: translate(5px);
+  transform: translate(1px);
 }
 @media screen and (max-width: 768px) {
   .header .navBar {
@@ -99,4 +99,38 @@
 }
 .header .toggleNavbar:hover {
   color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--PrimaryColor);
+    padding: 0 0.45rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
 }/*# sourceMappingURL=navbar.css.map */

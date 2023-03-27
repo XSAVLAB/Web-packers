@@ -125,9 +125,13 @@ body {
   .section {
     padding: 6rem 0 4rem;
   }
+  .mainContent{
+    grid-template-columns: repeat(6,1fr);
+}
 }
 
 @media screen and (min-width: 2560px) {
+  
   body {
     zoom: 1.7;
   }

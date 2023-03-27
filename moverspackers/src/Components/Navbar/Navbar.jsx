@@ -53,9 +53,9 @@ const Navbar = () => {
               <NavLink to="/contacts" className="navLink">Contacts</NavLink>
             </li>
 
-            <button className="btn">
+            {/* <button className="btn">
               <a to="#">Book Now</a>
-            </button>
+            </button> */}
           </ul>
 
           <div onClick={removeNavbar} className="closeNavbar">
