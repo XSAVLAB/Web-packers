@@ -50,7 +50,7 @@ on:
 env:
   PROJECT_ID: inspired-skill-380213
   SERVICE: welcomepackers-service
-  REGION: global
+  REGION: us-central1
 jobs:
   deploy:
     # Add 'id-token' with the intended permissions for workload identity federation
