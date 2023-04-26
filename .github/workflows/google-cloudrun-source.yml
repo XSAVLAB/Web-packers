@@ -80,7 +80,7 @@ jobs:
         with:
           service: ${{ env.SERVICE }}
           # NOTE: If required, update to the appropriate source folder
-          source: ./moverspackers
+          source: ./
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
         run: echo ${{ steps.deploy.outputs.url }}
