@@ -50,7 +50,7 @@ on:
 env:
   PROJECT_ID: inspired-skill-380213
   SERVICE: welcomepackers-service
-  REGION: us-central1
+  REGION: global
 jobs:
   deploy:
     # Add 'id-token' with the intended permissions for workload identity federation
@@ -79,7 +79,6 @@ jobs:
         uses: 'google-github-actions/deploy-cloudrun@v1'
         with:
           service: ${{ env.SERVICE }}
-          region: ${{ env.REGION }}
           # NOTE: If required, update to the appropriate source folder
           source: ./moverspackers
       # If required, use the Cloud Run url output in later steps
