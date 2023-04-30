@@ -7,11 +7,6 @@ import img8 from "../../Assets/img8.jpg";
 import img9 from "../../Assets/img9.jpg";
 import img10 from "../../Assets/img10.jpg";
 
-
-
-import { HiLocationMarker } from "react-icons/hi";
-import { TbClipboardCheck } from "react-icons/tb";
-
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 

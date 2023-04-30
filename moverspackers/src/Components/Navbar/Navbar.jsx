@@ -4,8 +4,6 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
-import Service from "../Service/Service";
-import { Switch, Route } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBar");

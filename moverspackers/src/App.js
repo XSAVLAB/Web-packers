@@ -24,7 +24,7 @@ const App = () => {
           <Home />
           <Main />
           <Footer />
-          <ChatBot />
+          {/* <ChatBot /> */}
         </Route>
 
         <Route path="/service">
