@@ -40,6 +40,12 @@ const Home = () => {
          <p data-aos="fade-up">
           Pune,Maharashtra- 411057
          </p>
+         <p data-aos="fade-up">
+          Email - info@welcomepackers.in
+         </p>
+         <p data-aos="fade-up">
+          Contact No - 9823970450, 8888202978
+         </p>
         </div>
 
         {/* <div data-aos="fade-up" className="cardDiv grid">
