@@ -30,7 +30,7 @@ const Home = () => {
           <h1 data-aos="fade-right" className="homeTitle">
             Lets Pack & Move with Welcome Packers & Movers 
           </h1>
-          <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Were !!!</h2>
+          <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Where !!!</h2>
          <p data-aos="fade-up">
           Shop No.25/24,Opp.HDFC Bank
          </p>
