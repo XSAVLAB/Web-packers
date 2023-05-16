@@ -44,7 +44,7 @@ const Home = () => {
           Email - info@welcomepackers.in
          </p>
          <p data-aos="fade-up">
-          Contact No - 9860953508
+          Contact No -  9823970450 , 8888202978
          </p>
         </div>
 
