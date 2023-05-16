@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* </Route>
             </Switch> */}
             <li className="navItem">
-              <NavLink to="/contacts" className="navLink">Contacts</NavLink>
+              <NavLink to="/contacts" className="navLink">Contact Us</NavLink>
             </li>
 
             {/* <button className="btn">

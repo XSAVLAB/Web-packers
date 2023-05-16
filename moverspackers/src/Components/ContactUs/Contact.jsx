@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./home.css";
+import "./contact.css";
 import video from "../../Assets/video2.mp4";
 import { FiFacebook } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -10,27 +10,27 @@ import { TbApps } from "react-icons/tb";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Home = () => {
+const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
   return (
-    <section className="home">
+    <section className="contact">
       <div className="overlay"></div>
 
       <video src={video} muted autoPlay loop type="video2/mp4"></video>
 
-      <div className="homeContent container">
+      <div className="contactContent container">
         <div className="textDiv">
-        <span data-aos="fade-up" className="smallText">
-            A complete household transformation
-          </span>
-
-          <h1 data-aos="fade-right" className="homeTitle">
-            Lets Pack & Move with Welcome Packers & Movers 
+          <h1 data-aos="fade-right" className="contactTitle">
+          Contact Us
           </h1>
-          <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Where !!!</h2>
+          <h2 data-aos="fade-left">Email - info@welcomepackers.in</h2>
+          <h1 data-aos="fade-up">
+          Contact No - 9860953508
+         </h1>
+          
          <p data-aos="fade-up">
           Shop No.25/24,Opp.HDFC Bank
          </p>
@@ -40,47 +40,54 @@ const Home = () => {
          <p data-aos="fade-up">
           Pune,Maharashtra- 411057
          </p>
-         <p data-aos="fade-up">
-          Email - info@welcomepackers.in
-         </p>
-         <p data-aos="fade-up">
-          Contact No - 9860953508
-         </p>
         </div>
 
-        {/* <div data-aos="fade-up" className="cardDiv grid">
+         <div data-aos="fade-up" className="cardDiv grid">
+          <div className="textDiv">
+          <h2 data-aos="fade-left">Business Enquiry</h2>
+
+          </div>
           <div className="destinationInput">
-            <label htmlFor="city">Our Address Is</label>
+            <label htmlFor="city">Name</label>
             <div className="input flex">
               <input type="text" placeholder="Enter name here..." />
-              <GrLocation className="icon" />
             </div>
           </div>
 
           <div className="dateInput">
-            <label htmlFor="date">Select your date</label>
+          <label htmlFor="city">Mobile No</label>
             <div className="input flex">
-              <input type="date" />
+              <input type="text" placeholder="Enter mobile number here..." />
             </div>
           </div>
 
-          <div className="priceInput">
-            <div className="label_total flex">
-              <label htmlFor="price"></label>
-              <h3 className="total">$5000</h3>
-            </div>
+          <div className="dateInput">
+          <label htmlFor="city">Email ID</label>
             <div className="input flex">
-              <input type="range" max="5000" min="1000" />
+              <input type="text" placeholder="Enter email ID here..." />
+            </div>
+          </div>
+
+          <div className="dateInput">
+          <label htmlFor="city">From</label>
+            <div className="input flex">
+              <input type="text" placeholder="Enter destination start from here..." />
+            </div>
+          </div>
+
+          <div className="destination">
+          <label htmlFor="city">To</label>
+            <div className="input flex">
+              <input type="text" placeholder="Enter destination end to here..." />
             </div>
           </div>
 
           <div className="searchOptions flex">
-            <HiFilter className="icon" />
-            <span>MORE FILTERS</span>
-          </div>
-        </div> */}
+            <span>Send Message</span>
+          </div>  
+          </div> 
 
-        <div data-aos="fade-up" className="homeFooterIcons flex">
+        <div data-aos="fade-up" className="contactFooterIcons flex">
           <div className="rightIcons">
             <FiFacebook className="icon" />
             <AiOutlineInstagram className="icon" />
@@ -97,4 +104,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Contact;

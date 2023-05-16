@@ -8,6 +8,8 @@ import ChatBot from "./Components/ChatBot/ChatBot";
 import Service from "./Components/Service/Service";
 import Service2 from "./Components/Service2/Service2";
 import Service3 from "./Components/Service2/Service3";
+import Contacts from "./Components/ContactUs/Contact";
+
 
 
 import AboutUs from "./Components/AboutUs/AboutUs";
@@ -39,6 +41,10 @@ const App = () => {
 
         <Route path="/pages">
           <Pages />
+        </Route>
+
+        <Route path="/contacts">
+          <Contacts />
         </Route>
 
 
