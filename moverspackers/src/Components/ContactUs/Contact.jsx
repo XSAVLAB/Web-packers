@@ -28,7 +28,7 @@ const Contact = () => {
           </h1>
           <h2 data-aos="fade-left">Email - info@welcomepackers.in</h2>
           <h1 data-aos="fade-up">
-          Contact No -  9823970450 , 8888202978
+          Contact No -  7988145538 , 8888202978
          </h1>
           
          <p data-aos="fade-up">
