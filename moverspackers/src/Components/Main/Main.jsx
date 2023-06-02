@@ -15,10 +15,9 @@ const Data = [
   {
     id: 1,
     imgSrc: img,
-    destTitle: "Mumbai",
-    location: "Bandra",
-    grade: "CULTURAL RELAX",
-    fees: "Rs2000",
+    destTitle: "Chennai",
+    location: "Chennai",
+    
     description:
       "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
   },
@@ -26,10 +25,10 @@ const Data = [
   {
     id: 2,
     imgSrc: img2,
-    destTitle: "Nagpur",
-    location: "Bandra",
-    grade: "CULTURAL RELAX",
-    fees: "Rs2000",
+    destTitle: "Bangalore",
+    location: "Bangalore",
+    // grade: "CULTURAL RELAX",
+    // fees: "Rs2000",
     description:
       "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
   },
@@ -38,9 +37,9 @@ const Data = [
     id: 3,
     imgSrc: img3,
     destTitle: "Mumbai",
-    location: "Bandra",
-    grade: "CULTURAL RELAX",
-    fees: "Rs2000",
+    location: "Mumbai",
+    // grade: "CULTURAL RELAX",
+    // fees: "Rs2000",
     description:
       "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
   },
@@ -48,10 +47,30 @@ const Data = [
   {
     id: 4,
     imgSrc: img4,
-    destTitle: "Mumbai",
-    location: "Bandra",
-    grade: "CULTURAL RELAX",
-    fees: "Rs2000",
+    destTitle: "Delhi",
+    location: "Delhi",
+    // grade: "CULTURAL RELAX",
+    // fees: "Rs2000",
+    description:
+      "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
+  },
+   {
+    id: 4,
+    imgSrc: img4,
+    destTitle: "Kolkata",
+    location: "Kolkata",
+    // grade: "CULTURAL RELAX",
+    // fees: "Rs2000",
+    description:
+      "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
+  },
+   {
+    id: 4,
+    imgSrc: img4,
+    destTitle: "Jaipur",
+    location: "Jaipur",
+    // grade: "CULTURAL RELAX",
+    // fees: "Rs2000",
     description:
       "  Packers and movers are given intense training to load the materials properly. Therefore, they can easily handle heavy goods and load them into the car. ",
   },
@@ -88,10 +107,10 @@ const Main = () => {
 
                   <div className="fees flex">
                     <div className="grade">
-                      <span>
+                      {/* <span>
                         {grade}
                         <small>+1</small>
-                      </span>
+                      </span> */}
                     </div>
 
                     <div className="price">
