@@ -37,6 +37,7 @@ const App = () => {
 
         <Route path="/aboutUs">
           <AboutUs />
+          {/* <Footer /> */}
         </Route>
 
         <Route path="/pages">
@@ -46,8 +47,6 @@ const App = () => {
         <Route path="/contacts">
           <Contacts />
         </Route>
-
-
 
       </Switch>
     </>

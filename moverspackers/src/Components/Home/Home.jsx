@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import video from "../../Assets/video2.mp4";
-import { FiFacebook } from "react-icons/fi";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
-import { BsListUl } from "react-icons/bs";
-import { TbApps } from "react-icons/tb";
+
+// import { FiFacebook } from "react-icons/fi";
+// import { AiOutlineInstagram } from "react-icons/ai";
+// import { BsTwitter } from "react-icons/bs";
+// import { BsListUl } from "react-icons/bs";
+// import { TbApps } from "react-icons/tb";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -32,13 +33,10 @@ const Home = () => {
           </h1>
           <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Where !!!</h2>
          <p data-aos="fade-up">
-          Shop No.25/24,Opp.HDFC Bank
+          Shop No.25/24, Opp.HDFC Bank
          </p>
          <p data-aos="fade-up">
-          Hinjewadi Rajiv Gandhi Infotech Park,Hinjewadi,
-         </p>
-         <p data-aos="fade-up">
-          Pune,Maharashtra- 411057
+          Rajiv Gandhi Infotech Park, Hinjewadi, Pune- 411057
          </p>
          <p data-aos="fade-up">
           Email - info@welcomepackers.in
@@ -79,7 +77,7 @@ const Home = () => {
             <span>MORE FILTERS</span>
           </div>
         </div> */}
-
+      {/* 
         <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcons">
             <FiFacebook className="icon" />
@@ -91,7 +89,8 @@ const Home = () => {
             <BsListUl className="icon" />
             <TbApps className="icon" />
           </div>
-        </div>
+        </div> */}
+
       </div>
     </section>
   );

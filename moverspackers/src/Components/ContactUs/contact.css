@@ -28,7 +28,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgb(5, 103, 130);
+  background: rgba(0, 0, 0, 0.65);
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -62,7 +62,7 @@
   text-align: center;
 }
 .contact .contactContent .textDiv .smallText {
-  font-size: 13px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: var(--textColor);
 }
@@ -72,109 +72,101 @@
   text-align: center;
   transition: 2s ease;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
-.contact .contactContent .textDiv h2 {
+.contact .contactContent .textDiv h3 {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  color: var(--blackColor);
-  padding-top: 20px;
-  padding-bottom: 50px;
-  transition: 2s ease;
+  padding: 1rem 0;
 }
+.contact .contactContent .textDiv h3:hover {
+  color: var( --SecondaryColor);
+}
+
 .contact .contactContent .textDiv p {
   position: relative;
+  margin-top: 1rem;
   text-align: center;
   color: var(--whiteColorDeam);
-  transition: 2s ease;
 }
+
 .contact .contactContent .cardDiv {
   position: relative;
   padding: 1rem 1rem;
-  background: var(--whiteColor);
-  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
   gap: 1rem;
+  color: var(--PrimaryColor);
 }
-.contact .contactContent .cardDiv label {
-  display: block;
-  color: var(--textColor);
-  padding-bottom: 10px;
-  font-size: 13px;
-  font-weight: 500;
-}
+
 .contact .contactContent .cardDiv .label_total {
   justify-content: space-between;
   align-items: center;
 }
 .contact .contactContent .cardDiv .label_total .total {
   color: var(--textColor);
-  font-size: 18px;
-  padding-bottom: 10px;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
-.contact .contactContent .cardDiv .input {
-  height: 40px;
-  padding: 0 1rem;
-  background: var(--inputColor);
-  border-radius: 3rem;
+
+.contact .contactContent .cardDiv label {
+  display: block;
+  color: var(--textColor);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0 0 0;
 }
-.contact .contactContent .cardDiv .input input {
-  background: none;
-  border: none;
-  outline: none;
+
+.inputField input {
   width: 100%;
-  font-size: 13px;
-  font-weight: 100;
+  padding: 0.6rem 0.7rem;
+  border-radius: 3rem;
+  border: 0.1rem solid var(--whiteColor);
+  outline: none;
+  background: transparent;
+  color: var(--textColor);
 }
+
+.inputField input:hover {
+  background: white;
+}
+.buttonField{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn{
+  width: 45%;
+  height: 3rem;
+  font-weight: 800;
+  color: white;
+  border: 0.1rem solid white;
+  background: var(--PrimaryColor);
+  border-radius: 2rem;
+}
+
+.submitBtn:hover{
+  background: white;
+  color: var(--PrimaryColor);
+}
+
 .contact .contactContent .cardDiv .input input::-moz-placeholder {
-  font-size: 13px;
+  font-size: 1rem;
 }
 .contact .contactContent .cardDiv .input input::placeholder {
-  font-size: 13px;
+  font-size: 1rem;
 }
 .contact .contactContent .cardDiv .input .icon {
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--PrimaryColor) !important;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
-.contact .contactContent .cardDiv .input .input[type=range] {
-  background: blue;
-}
-.contact .contactContent .cardDiv .searchOptions {
-  position: absolute;
-  background: var(--gradientColor);
-  width: -moz-max-content;
-  width: max-content;
-  bottom: 0.7rem;
-  -moz-column-gap: 0.8rem;
-       column-gap: 0.8rem;
-  padding: 5px 1rem;
-  border-radius: 3rem;
-  left: 50%;
-  transform: translate(-50%);
-  justify-content: center;
-  cursor: pointer;
-}
-.contact .contactContent .cardDiv .searchOptions:hover {
-  background: var(--PrimaryColor);
-}
-.contact .contactContent .cardDiv .searchOptions .icon {
-  font-size: 18px;
-}
-.contact .contactContent .cardDiv .searchOptions span {
-  font-size: 13px;
-}
-.contact .contactContent .contactFooterIcons {
-  width: 100%;
-  justify-content: space-between;
-}
-.contact .contactContent .contactFooterIcons .icon {
-  font-size: 20px;
-  margin: 0 5px;
-  color: var(--whiteColor);
-  font-weight: 600;
-}
-.contact .contactContent .contactFooterIcons .icon:hover {
-  color: var(--PrimaryColor);
+.contact .contactContent .cardDiv button{
+  margin: 1rem 0;
 }
 
 @media screen and (mid-width: 500px) {
@@ -190,7 +182,7 @@
   .contact .contactContent .textDiv .contactTitle::after {
     position: absolute;
     content: "";
-    background: var(--SecondaryColor);
+    background-color: var(--SecondaryColor);
     height: 5px;
     width: 145px;
     right: 0px;
@@ -227,8 +219,10 @@
   .contact .contactContent .cardDiv .input {
     margin-bottom: 1rem;
   }
-  .contact .contactContent .cardDiv .searchOptions {
-    bottom: -1rem;
-    padding: 8px 1rem;
-  }
+}
+.emailText{
+  color: aquamarine;
+}
+.submit{
+  margin: 2%;
 }

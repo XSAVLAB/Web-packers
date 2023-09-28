@@ -52,9 +52,8 @@ const Page = () => {
   return (
     <section className="page container section">
       <div className="secTitle">
-        <h1 data-aos="fade-right" className="title">Gallary</h1>
+        <h1 data-aos="fade-right" className="title">Gallery</h1>
       </div>
-
       <div className="secContent grid">
         {Data.map(
           ({ id, imgSrc}) => {
