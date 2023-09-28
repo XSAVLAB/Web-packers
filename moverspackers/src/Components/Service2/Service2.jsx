@@ -18,55 +18,49 @@ const Service2 = () => {
           <div className="singleItem">
             <img src={img1} alt="Image Name" />
             <h3>Household Shifting </h3>
-            {/* <p>
-              This service is meant for individuals who need to move their
-              household items and furniture to a new location.
-            </p> */}
+            <p>
+              We make household shifting a breeze, with professional packing, loading, unloading, and transportation services to ensure your belongings arrive safe and sound.
+            </p>
           </div>
 
           <div className="singleItem">
             <img src={img2} alt="Image Name" />
             <h3>Office Shifting Services</h3>
-            {/* <p>
-              This service is meant for corporate organizations that need to
-              relocate their office premises to a new location.
-            </p> */}
+            <p>
+            We help businesses of all sizes relocate their offices efficiently and stress-free, with minimal disruption to operations.
+            </p>
           </div>
 
           <div className="singleItem">
             <img src={img3} alt="Image Name" />
             <h3>Car Shifting Services</h3>
-            {/* <p>
-              This service is meant for individuals who need to transport their
-              vehicles with security & without any damage to a new location.
-            </p> */}
+            <p>
+            We transport your car safely and securely to your new destination, using specialized equipment and experienced drivers.
+            </p>
           </div>
 
           <div className="singleItem">
             <img src={img4} alt="Image Name" />
             <h3>Storage Services</h3>
-            {/* <p>
-              This service is meant for individuals who need to temporarily
-              store their belongings in a safe and secure place.
-            </p> */}
+            <p>
+            We offer secure and affordable storage solutions for your belongings, whether you're moving to a new home, renovating, or simply need to declutter.
+            </p>
           </div>
 
           <div className="singleItem">
             <img src={img5} alt="Image Name" />
             <h3>International Relocation Services</h3>
-            {/* <p>
-              This service is meant for individuals who need to move to another
-              country .
-            </p> */}
+            <p>
+            We guide you through every step of the international relocation process, from packing and shipping to customs clearance and arrival assistance.
+            </p>
           </div>
 
           <div className="singleItem">
             <img src={img6} alt="Image Name" />
             <h3>Pet Relocation Services</h3>
-            {/* <p>
-              This service is meant for individuals who need to relocate their
-              pets with security to a new location.
-            </p> */}
+            <p>
+            We help you move your furry friends to your new home safely and comfortably, with all the necessary documentation and arrangements taken care of.
+            </p>
           </div>
         </div>
       </div>
