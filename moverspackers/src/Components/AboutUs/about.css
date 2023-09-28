@@ -24,6 +24,7 @@
     justify-content: center;
     margin: auto;
   }
+
   .about .overlay {
     position: absolute;
     height: 100%;
@@ -34,6 +35,7 @@
     z-index: 1;
     mix-blend-mode: hard-light;
   }
+
   .about video {
     position: absolute;
     height: 100%;
@@ -62,11 +64,11 @@
     text-align: center;
   }
   .about .aboutContent .textDiv .smallText {
-    font-size: 3.2rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--whiteColor);
   }
-  .about .aboutContent .textDiv .aboutTitle {
+  .about .aboutContent .textDiv, .aboutTitle {
     position: relative;
     font-size: 2rem;
     text-align: center;
@@ -74,6 +76,12 @@
     text-transform:inherit;
     color: var(--whiteColorDeam);
 
+  }
+
+  .aboutTitle{
+    font-size: 1.1rem;
+    font-weight: 1000;
+    margin-top: 5%;
   }
   .about .aboutContent .textDiv h2 {
     position: relative;

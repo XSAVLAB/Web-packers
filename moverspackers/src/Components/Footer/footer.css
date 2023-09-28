@@ -64,7 +64,7 @@
   gap: 1rem;
 }
 .footer .secContent .contactDiv .text small {
-  font-size: 13px;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--whiteColor);
 }
@@ -72,38 +72,38 @@
   color: var(--whiteColor);
   font-size: 1.8rem;
 }
+
 .footer .secContent .contactDiv .inputDiv {
   width: 100%;
-  gap: 1rem;
-  flex-direction: column;
 }
+
 .footer .secContent .contactDiv .inputDiv input {
   width: 100%;
-  padding: 0.5rem 0.6rem;
+  padding: 0.6rem 0.7rem;
   border-radius: 3rem;
-  border: 1px solid var(--whiteColor);
+  border: 0.1rem solid var(--whiteColor);
   outline: none;
   background: transparent;
   color: var(--whiteColor);
+  margin-top: 1rem;
 }
-.footer .secContent .contactDiv .inputDiv input::-moz-placeholder {
-  color: var(--whiteColor);
-  opacity: 0.5;
+.footer .secContent .contactDiv .inputDiv input:hover{
+  color: var(--PrimaryColor);
 }
-.footer .secContent .contactDiv .inputDiv input::placeholder {
-  color: var(--whiteColor);
-  opacity: 0.5;
-}
+
 .footer .secContent .contactDiv .inputDiv .btn {
-  width: 100%;
-  justify-content: center;
+  width: 50%;
   color: var(--whiteColor);
-  font-weight: 500;
+  font-weight: 800;
   gap: 0.5rem;
+  margin: 1rem 0;
+  display: inline;
 }
+
 .footer .secContent .contactDiv .inputDiv .btn .icon {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
+
 .footer .secContent .footerCard {
   position: relative;
   padding: 1rem 1rem 4rem;
@@ -130,10 +130,10 @@
 .footer .secContent .footerCard .logoDiv .logo .icon {
   font-size: 2 5px;
   color: var(--PrimaryColor);
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .footer .secContent .footerCard .footerParagraph {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--textColor);
 }
 .footer .secContent .footerCard .footerSocials {
@@ -142,16 +142,18 @@
 }
 .footer .secContent .footerCard .footerSocials .icon {
   color: var(--blackColor);
-  font-size: 20px;
+  font-size: 2rem;
 }
+
 .footer .secContent .footerCard .footerSocials .icon:hover {
   color: var(--PrimaryColor);
 }
+
 .footer .secContent .footerCard .footerLinks {
   flex-basis: 50%;
   width: 100%;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
@@ -161,12 +163,12 @@
   margin-bottom: 0.5rem;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
-  font-size: 15px;
+  font-size: 0.8rem;
   color: var(--textColor);
   transition: 0.3s ease-in-out;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
-  font-size: 15px;
+  font-size: 0.5rem;
   color: var(--greyText);
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
@@ -188,6 +190,15 @@
 .footer .secContent .footerCard .footerDiv small {
   font-size: 10px;
   color: var(--whiteColor);
+}
+
+#emailInput:hover{
+  background-color: white;
+  color: black;
+}
+
+.mailSend{
+  width: 10%;
 }
 
 @media screen and (mid-width: 500px) {

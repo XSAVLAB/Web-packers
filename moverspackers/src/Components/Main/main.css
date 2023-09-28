@@ -20,16 +20,18 @@
 .main {
   width: 100%;
 }
+
 .main .secTitle .title {
   position: relative;
   width: -moz-max-content;
   width: max-content;
   color: var(--textColor);
-  margin: 1rem 0;
+  margin: 0 0 2rem 0;
   z-index: 2;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: 2s ease;
 }
+
 .main .secTitle .title::after {
   position: absolute;
   content: "";
@@ -40,10 +42,12 @@
   bottom: 5px;
   z-index: -1;
 }
+
 .main .secContent {
   justify-content: center;
   gap: 1.5rem;
 }
+
 .main .secContent .singleDestination {
   height: 100%;
   display: grid;
@@ -54,16 +58,19 @@
   box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
   overflow: hidden;
 }
+
 .main .secContent .singleDestination:hover {
   background: var(--cardHover);
   box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
   transition: 0.3s ease;
 }
+
 .main .secContent .singleDestination .imageDiv {
   height: 280px;
   width: 100%;
   overflow: hidden;
 }
+
 .main .secContent .singleDestination .imageDiv img {
   height: 100%;
   width: 100%;
@@ -71,27 +78,31 @@
      object-fit: cover;
   transition: 2s ease;
 }
+
 .main .secContent .singleDestination .imageDiv:hover img {
   transform: scale(1.1);
 }
+
 .main .secContent .singleDestination .cardInfo {
-  padding: 1rem;
+  padding: 0.5rem;
 }
+
 .main .secContent .singleDestination .cardInfo .destTitle {
   color: var(--blackColor);
   font-size: 1.25rem;
 }
+
 .main .secContent .singleDestination .cardInfo .contient {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .main .secContent .singleDestination .cardInfo .contient .icon {
   color: var(--textColor);
-  font-size: 18px;
+  font-size: 1rem;
 }
 .main .secContent .singleDestination .cardInfo .contient .name {
   color: var(--textColor);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .main .secContent .singleDestination .cardInfo .fees {
   width: 100%;
@@ -104,7 +115,7 @@
 .main .secContent .singleDestination .cardInfo .fees .grade {
   color: var(--textColor);
   max-width: 100px;
-  line-height: 20px;
+  line-height: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,15 +125,15 @@
   background: var(--gradientColor);
   border-radius: 1rem;
   color: var(--whiteColor);
-  padding: 1px 10px;
-  font-size: 10px;
+  padding: 1rem;
+  font-size: 0.7rem;
 }
 .main .secContent .singleDestination .cardInfo .fees .price {
   font-size: 2rem;
   color: var(--blackColor);
 }
 .main .secContent .singleDestination .cardInfo .desc {
-  font-size: 13.5px;
+  font-size: 0.5;
   color: var(--textColor);
   font-weight: 500;
 }
@@ -135,7 +146,49 @@
 }
 .main .secContent .singleDestination .cardInfo .btn .icon {
   align-self: center;
-  font-size: 18px;
+  font-size: 1rem;
+}
+
+.specialOfferSection{
+  margin-top: 4rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../Assets/img16.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 10rem;
+  color: white;
+}
+
+.specialOfferSection h1:hover{
+  color: var(--SecondaryColor);
+  font-size: 2rem;
+}
+
+.specialOfferSection p{
+  margin: 2rem 0;
+}
+.specialOfferSection p:hover{
+  color: var(--SecondaryColor);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.cardVideo {
+  border: 1rem solid var(--whiteColor);
+  height: 20rem;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cardVideo:hover {
+  border: 1rem solid green;
+  height: 20rem;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 @media screen and (mid-width: 500px) {

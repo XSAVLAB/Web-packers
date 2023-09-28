@@ -36,7 +36,7 @@ const Service = () => {
             >
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
+                Packers & Movers in Chennai
               </li>
 
               <li className="serviceList flex">
@@ -50,24 +50,48 @@ const Service = () => {
               </li>
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Agency
+                Payment
               </li>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="linkGroup"
+            >
+              <li className="serviceList flex">
+                <FiChevronRight className="icon" />
+                Packers & Movers in Bangalore
+              </li>
+
+              <li className="serviceList flex">
+                <FiChevronRight className="icon" />
+                Insurance
+              </li>
+
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
                 Agency
               </li>
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Agency
+                Payment
               </li>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="linkGroup"
+            >
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Agency
+                Packers & Movers in Mumbai
               </li>
+
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Agency
+                Insurance
               </li>
+
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
                 Agency
@@ -85,7 +109,7 @@ const Service = () => {
             >
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
+                Packers & Movers in Delhi
               </li>
 
               <li className="serviceList flex">
@@ -93,128 +117,6 @@ const Service = () => {
                 Insurance
               </li>
 
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Payment
-              </li>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="3000"
-              className="linkGroup"
-            >
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Insurance
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Payment
-              </li>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="3000"
-              className="linkGroup"
-            >
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Insurance
-              </li>
-
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
                 Agency
@@ -233,7 +135,7 @@ const Service = () => {
             >
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
+                Packers & Movers in Kolkata
               </li>
 
               <li className="serviceList flex">
@@ -241,30 +143,6 @@ const Service = () => {
                 Insurance
               </li>
 
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
                 Agency
@@ -283,7 +161,7 @@ const Service = () => {
             >
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
-                Packers & Movers in Bangaluru
+                Packers & Movers in Jaipur
               </li>
 
               <li className="serviceList flex">
@@ -291,30 +169,6 @@ const Service = () => {
                 Insurance
               </li>
 
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
-              <li className="serviceList flex">
-                <FiChevronRight className="icon" />
-                Agency
-              </li>
               <li className="serviceList flex">
                 <FiChevronRight className="icon" />
                 Agency

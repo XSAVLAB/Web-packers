@@ -77,13 +77,15 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
+  
 .service2 .secContainer .videoCard .cardVideo {
-  border: 2px solid var(--whiteColor);
-  height: 200px;
+  border: 1rem solid var(--whiteColor);
+  height: 20rem;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
 }
+
 .service2 .secContainer .videoCard .cardVideo video {
   height: 100%;
   width: 100%;

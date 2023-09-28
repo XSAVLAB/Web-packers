@@ -8,7 +8,7 @@
   );
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
-  --textColor: hsl(240, 4%, 36%);
+  --textColor: hsl(199, 100%, 33%);
   --whiteColorDeam: hsl(0, 0%, 93%);
   --greyText: rgb(190, 190, 190);
   --inputColor: rgb(239, 239, 239);
@@ -25,7 +25,7 @@
   width: -moz-max-content;
   width: max-content;
   color: var(--textColor);
-  margin: 1rem 0;
+  margin: 1rem;
   z-index: 2;
 }
 .page .secTitle .title::after {
