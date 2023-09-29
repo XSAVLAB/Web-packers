@@ -59,6 +59,7 @@
   color: var(--whiteColor);
   z-index: 100;
 }
+
 .home .homeContent .textDiv {
   padding: 2rem 0;
   text-align: center;
@@ -70,12 +71,12 @@
   font-size: 1.5rem;
   text-align: center;
   color: var(--greyText);
-  padding: 2rem 0;
+  padding: 1rem 0;
   transition: 2s ease;
 }
 
-.home .homeContent .textDiv .homeTitle {
-  font-size: 2rem;
+.home .homeContent .textDiv h1 {
+  font-size: 1rem;
   position: relative;
   text-align: center;
   transition: 2s ease;
@@ -101,7 +102,7 @@
   text-align: center;
   color: var(--whiteColorDeam);
   transition: 2s ease;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
 }
 
 .home .homeContent .cardDiv {
@@ -140,6 +141,10 @@
   width: 100%;
   font-size: 1rem;
   font-weight: 100;
+}
+.linkDecorationNone{
+  text-decoration: none;
+  color: white;
 }
 .home .homeContent .cardDiv .input input::-moz-placeholder {
   font-size: 13px;

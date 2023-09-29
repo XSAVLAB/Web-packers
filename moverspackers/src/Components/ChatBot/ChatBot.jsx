@@ -1,68 +1,161 @@
-import React from "react";
-// import "./chatBot.css";
-import ChatBot from "react-simple-chatbot";
-import { Segment } from "semantic-ui-react";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose, faComments } from '@fortawesome/free-solid-svg-icons';
+import Chat from 'react-simple-chatbot';
+import { Segment } from 'semantic-ui-react';
+import './ChatBot.css';
 
-const steps = [
-  {
-    id: "Greet",
-    message: "Hello, Welcome to Packers and Movers",
-    trigger: "Ask Name",
-  },
+const ChatBot2 = ({ setIsOpen, isOpen }) => {
+  const [userName, setUserName] = useState('');
+  const [selectedOption, setSelectedOption] = useState('');
+  const [contactDetails, setContactDetails] = useState('');
 
-  {
-    id: "Ask Name",
-    message: "Please enter your name",
-    trigger: "waiting",
-  },
+  const toggleChat = () => {
+    if (isOpen === 'simplechat') {
+      setIsOpen('');
+    } else {
+      setIsOpen('simplechat');
+    }
+  };
 
-  {
-    id: "waiting",
-    user: true,
-    trigger: "Name",
-  },
+  const handleUserInput = (value) => {
+    console.log('User input:', value);
+    setUserName(value);
+  };
 
-  {
-    id: "Name",
-    message: "Hello, Welcome to Packers and Movers",
-    trigger: "Ask Name",
-  },
+  const handleOptionSelect = (option) => {
+    console.log('Option selected:', option);
+    setSelectedOption(option);
+  };
 
-  {
-    id: "Name",
-    message: "Hi{previousValue}, Please select your issue",
-    trigger: "issues",
-  },
+  const handleContactDetails = (value) => {
+    console.log('Contact Details selected:', value);
+    setContactDetails(value);
+  };
 
-  {
-    id: "issues",
-    options: [
-      { value: "React", label: "React", trigger: "React" },
-      { value: "Angular", label: "Angular", trigger: "Angular" },
-    ],
-  },
-
-  {
-    id: "React",
-    message: "Thanks for your react issue",
-    end: true,
-  },
-
-  {
-    id: "Angular",
-    message: "Thanks for your angular issue",
-    end: true,
-  },
-];
-
-const App = () => {
+  const steps = [
+    {
+      id: '1',
+      message: 'Please enter your name',
+      trigger: 'user_name_input',
+    },
+    {
+      id: 'user_name_input',
+      user: true,
+      validator: (value) => {
+        if (!value) {
+          return 'Please enter your name';
+        }
+        handleUserInput(value);
+        return true;
+      },
+      trigger: '2',
+    },
+    {
+      id: '2',
+      message: `Hi {previousValue}, how can I help you?`,
+      user: true,
+      trigger: 'service_options',
+    },
+    {
+      id: 'service_options',
+      options: [
+        { value: 'House Shifting', label: 'House Shifting',trigger:'5' },
+        { value: 'Office Shifting', label: 'Office Shifting', trigger:'5'},
+        { value: 'Hotel Shifting', label: 'Hotel Shifting', trigger:'5'},
+        { value: 'Vehicle Transport', label: 'Vehicle Transport', trigger:'5'},
+      ],
+      validator: (option) => {
+        if (!option) {
+          return 'Please enter your name';
+        }
+        handleOptionSelect(option);
+        return true;
+      },
+      trigger: '5',
+    },  
+    {
+      id: '5',
+      message: 'Thanks for choosing us for {previousValue}. \n Please provide your Email or Mobile Number.',
+      trigger: '6',
+    },
+    {
+      id: '6',
+      user: true,
+      validator: (value) => {
+        if (!value) {
+          return 'Please provide your email or mobile number';
+        }
+        handleContactDetails(value);
+        return true;
+      },
+      trigger: '7',
+    },
+    {
+      id: '7',
+      message: 'Our coordinator will contact you at {previousValue}.',
+      user: true,
+      trigger: '8',
+    },
+    {
+      id: '8',
+      message: `Please confirm your details: \nName: ${userName}\nService Option: ${selectedOption}\nContact Details: ${contactDetails}`,
+      trigger: '9',
+    },
+    {
+      id: '9',
+      component: (
+        <div>
+          <h4>Confirm User Details</h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>Name:</td>
+                <td>{userName}</td>
+              </tr>
+              <tr>
+                <td>Service Option:</td>
+                <td>{selectedOption}</td>
+              </tr>
+              <tr>
+                <td>Contact Details:</td>
+                <td>{contactDetails}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      ),
+      trigger: '10',
+    },
+    {
+      id: '10',
+      message: 'Thank you!',
+      end: true,
+    },
+  ];
+  
   return (
-    <section className="chatBot">
-      <Segment >
-        <ChatBot steps={steps} />
-      </Segment>
-    </section>
+    <div className={`chatBotContainer ${isOpen === 'simplechat' ? 'open' : ''}`}>
+      {isOpen === 'simplechat' ? (
+        <div>
+          <div className="chatBotHeader">
+            <h2>
+              <button className="closeButton" onClick={toggleChat}>
+                <FontAwesomeIcon icon={faClose} style={{ color: 'white' }} />
+              </button>
+              <Segment>
+                <Chat steps={steps} />
+              </Segment>
+            </h2>
+          </div>
+        </div>
+      ) : (
+        <button className="openButton" onClick={toggleChat}>
+          <FontAwesomeIcon icon={faComments} style={{ color: 'white' }} /> Chat
+        </button>
+      )}
+    </div>
   );
 };
 
-export default App;
+export default ChatBot2;

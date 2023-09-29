@@ -29,19 +29,6 @@ const Footer = () => {
             <small>KEEP IN TOUCH</small>
             <h2>Pack & Move With Us</h2>
             <div className="inputDiv flex">
-            <form method="post" action="">
-              <input
-                data-aos="fade-up"
-                type="email"
-                id='emailInput'
-                placeholder="Enter Email Address"
-                required
-              />
-              <button data-aos="fade-up" className="btn flex mailSend" type="submit">
-                SEND
-                <FiSend className="icon" />
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -61,31 +48,6 @@ const Footer = () => {
               Packers and movers are given intense training to load the
               materials properly. Therefore, they can easily handle heavy goods
               and load them into the car.
-            </div>
-
-            <div data-aos="fade-up" className="footerSocials">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter className="icon" />
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillYoutube className="icon" />{" "}
-              </a>
-
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram className="icon" />
-              </a>
             </div>
           </div>
 

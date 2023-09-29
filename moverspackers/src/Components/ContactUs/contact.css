@@ -76,7 +76,7 @@
 }
 .contact .contactContent .textDiv h3 {
   position: relative;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 1rem 0;
 }
@@ -87,6 +87,7 @@
 .contact .contactContent .textDiv p {
   position: relative;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--whiteColorDeam);
 }

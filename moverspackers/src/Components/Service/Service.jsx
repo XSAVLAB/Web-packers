@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import "./service.css";
 import video from "../../Assets/video2.mp4";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMobileScreen,faEnvelope, faMapLocationDot} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-regular-svg-icons";
 
 const Home = () => {
   useEffect(() => {
@@ -23,21 +26,26 @@ const Home = () => {
           </h1>
         <div>
           <div className="textDiv">
-          <span data-aos="fade-up" className="smallText">
+          <h1 data-aos="fade-up">
             GET IN TOUCH
-          </span>
-          <h1 data-aos="fade-right" className="smallText">
-            Address: Shop No.25/24, Opp.HDFC Bank, Hinjewadi Rajiv Gandhi Infotech Park
           </h1>
-          <h1 data-aos="fade-right" className="smallText">
-          Hinjewadi, Pune- 411057
-          </h1>
-          <h1 data-aos="fade-right" className="smallText">
-          Email - info@welcomepackers.in
-          </h1>
-          <h1 data-aos="fade-right" className="smallText">
-          Contact No - 7988145538 , 8888202978
-          </h1>
+          <p data-aos="fade-up">
+         <a href="G-Map-Location" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faMapLocationDot} style={{ color: 'white',height:'19px',width:'25px' }} /> Shop No.25/24, Opp.HDFC Bank, 
+          Rajiv Gandhi Infotech Park, Hinjewadi, Pune- 411057</a> 
+         </p>
+         <p data-aos="fade-up">
+         <a href="mailto:info@welcomepackers.in" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white',height:'19px',width:'25px' }} /> info@welcomepackers.in </a>
+         </p>
+         <p data-aos="fade-up">
+          <a href="https://api.whatsapp.com/send?phone=917988145538&text=" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: 'white',height:'19px',width:'25px' }} /> 7988145538</a>
+         </p>
+         <p data-aos="fade-up">
+          <a href='tel:+91-8888202978' target='_blank' className="linkDecorationNone">
+          <FontAwesomeIcon icon={faMobileScreen} style={{ color: 'white',height:'17px',width:'25px' }} /> 8888202978</a>
+         </p>
           </div>
         </div>
         </div>

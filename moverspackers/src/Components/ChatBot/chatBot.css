@@ -1,23 +1,58 @@
-:root {
-  --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(
-    to right,
-    hsl(199, 100%, 33%),
-    hsl(199, 100%, 33%)
-  );
-  --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(201, 33%, 16%);
-  --textColor: hsl(240, 4%, 36%);
-  --whiteColorDeam: hsl(0, 0%, 93%);
-  --greyText: rgb(190, 190, 190);
-  --inputColor: rgb(239, 239, 239);
-  --bodyColor: rgb(240, 240, 246);
-  --cardBG: rgb(225, 225, 235);
+.chatBotContainer {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 500; /* Ensure it appears above other content */
+  }
+  .chat-header {
+    background-color: #075e54;
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 1rem;
+  }
+  
+  .chatBotHeader h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Use rem for font size */
+    height: auto;
+  }
+
+  .closeButton{
+    background-color: rgb(255, 0, 0);
+    width: 20%;
+    margin-left: 200%;
+  }
+.openButton{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background-color: transparent;
+    color:hsl(187, 85%, 43%);
+    border: 0.3rem solid hsl(187, 85%, 43%);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    font-weight: 1000;
+    font-size: 2rem;
 }
 
-.chatBot {
-  width: 100%;
-  position: fixed;
-  margin: auto;
-}/*# sourceMappingURL=chatBot.css.map */
+    /* Show the chat when it's open */
+    .chatBotContainer.open {
+        bottom: 5%;
+    right: 15%;
+    width: 10%; /* Adjust the width as needed */
+    height: 70%;
+    transform: translateX(10%); /* Initially off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+      }
+      
+      /* Hide close button when the chat is closed */
+      .chatBotContainer:not(.open) .closeButton {
+        display: none;
+      }
