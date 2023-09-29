@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClose, faComments } from '@fortawesome/free-solid-svg-icons';
+import { faClose, faComments, faL } from '@fortawesome/free-solid-svg-icons';
 import Chat from 'react-simple-chatbot';
 import { Segment } from 'semantic-ui-react';
 import './ChatBot.css';
@@ -53,9 +53,14 @@ const ChatBot2 = ({ setIsOpen, isOpen }) => {
     },
     {
       id: '2',
-      message: `Hi {previousValue}, how can I help you?`,
-      user: true,
-      trigger: 'service_options',
+      message: `Hi {previousValue}, How can I help you?`,
+      trigger: '3',
+    },
+    {
+      id:'3',
+      message:'Choose any one of the Service Options',
+      user:true,
+      trigger:'service_options',
     },
     {
       id: 'service_options',
@@ -76,7 +81,8 @@ const ChatBot2 = ({ setIsOpen, isOpen }) => {
     },  
     {
       id: '5',
-      message: 'Thanks for choosing us for {previousValue}. \n Please provide your Email or Mobile Number.',
+      message: 'Please provide your Email or Mobile Number.',
+      user: false,
       trigger: '6',
     },
     {
@@ -89,44 +95,56 @@ const ChatBot2 = ({ setIsOpen, isOpen }) => {
         handleContactDetails(value);
         return true;
       },
-      trigger: '7',
+      trigger: 'confirm_contact_details',
+    },
+
+    {
+      id:'confirm_contact_details',
+      message:'Please confirm your Contact details. Type Again.',
+      trigger:'select_again'
+    },
+    {
+      id: 'select_again',
+      options: [
+        { value: 'Email', label: 'Email',trigger:'7' },
+        { value: 'Mobile', label: 'Mobile', trigger:'7'},
+      ]
     },
     {
       id: '7',
       message: 'Our coordinator will contact you at {previousValue}.',
-      user: true,
       trigger: '8',
     },
     {
       id: '8',
       message: `Please confirm your details: \nName: ${userName}\nService Option: ${selectedOption}\nContact Details: ${contactDetails}`,
-      trigger: '9',
-    },
-    {
-      id: '9',
-      component: (
-        <div>
-          <h4>Confirm User Details</h4>
-          <table>
-            <tbody>
-              <tr>
-                <td>Name:</td>
-                <td>{userName}</td>
-              </tr>
-              <tr>
-                <td>Service Option:</td>
-                <td>{selectedOption}</td>
-              </tr>
-              <tr>
-                <td>Contact Details:</td>
-                <td>{contactDetails}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      ),
       trigger: '10',
     },
+    // {
+    //   id: '9',
+    //   component: (
+    //     <div>
+    //       <h4>Confirm User Details</h4>
+    //       <table>
+    //         <tbody>
+    //           <tr>
+    //             <td>Name:</td>
+    //             <td>{userName}</td>
+    //           </tr>
+    //           <tr>
+    //             <td>Service Option:</td>
+    //             <td>{selectedOption}</td>
+    //           </tr>
+    //           <tr>
+    //             <td>Contact Details:</td>
+    //             <td>{contactDetails}</td>
+    //           </tr>
+    //         </tbody>
+    //       </table>
+    //     </div>
+    //   ),
+    //   trigger: '10',
+    // },
     {
       id: '10',
       message: 'Thank you!',
