@@ -60,14 +60,20 @@
   color: var(--whiteColor);
   z-index: 100;
 }
+
 .home .homeContent .textDiv {
+  padding: 1rem 0;
+}
+
+.home .homeContent .textDiv h1 {
+  font-size: 2rem;
   padding: 2rem 0;
 }
 
 .home .homeContent .textDiv .homeTitle {
   position: relative;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .home .homeContent .textDiv .smallText {
@@ -83,6 +89,7 @@
   border-radius: 10px;
   gap: 1rem;
 }
+
 .home .homeContent .cardDiv label {
   display: block;
   color: var(--textColor);
@@ -90,21 +97,25 @@
   font-size: 13px;
   font-weight: 500;
 }
+
 .home .homeContent .cardDiv .label_total {
   justify-content: space-between;
   align-items: center;
 }
+
 .home .homeContent .cardDiv .label_total .total {
   color: var(--textColor);
   font-size: 18px;
   padding-bottom: 10px;
 }
+
 .home .homeContent .cardDiv .input {
   height: 40px;
   padding: 0 1rem;
   background: var(--inputColor);
   border-radius: 3rem;
 }
+
 .home .homeContent .cardDiv .input input {
   background: none;
   border: none;
@@ -113,20 +124,25 @@
   font-size: 13px;
   font-weight: 100;
 }
+
 .home .homeContent .cardDiv .input input::-moz-placeholder {
   font-size: 13px;
 }
+
 .home .homeContent .cardDiv .input input::placeholder {
   font-size: 13px;
 }
+
 .home .homeContent .cardDiv .input .icon {
   font-size: 18px;
   color: var(--PrimaryColor) !important;
   margin-left: 10px;
 }
+
 .home .homeContent .cardDiv .input .input[type=range] {
   background: blue;
 }
+
 .home .homeContent .cardDiv .searchOptions {
   position: absolute;
   background: var(--gradientColor);
@@ -151,10 +167,12 @@
 .home .homeContent .cardDiv .searchOptions span {
   font-size: 13px;
 }
+
 .home .homeContent .homeFooterIcons {
   width: 100%;
   justify-content: space-between;
 }
+
 .home .homeContent .homeFooterIcons .icon {
   font-size: 20px;
   margin: 0 5px;
@@ -165,9 +183,14 @@
   color: var(--PrimaryColor);
 }
 
+.linkDecorationNone{
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (mid-width: 500px) {
   .home .homeContent .textDiv .smallText {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .home .homeContent .textDiv .homeTitle {
     position: relative;

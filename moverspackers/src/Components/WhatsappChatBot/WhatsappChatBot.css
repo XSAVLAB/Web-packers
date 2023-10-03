@@ -1,0 +1,122 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(
+      to right,
+      hsl(199, 100%, 33%),
+      hsl(199, 100%, 33%)
+    );
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+  }
+
+/* WhatsappChat.css */
+.whatsapp-chat-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 30%; /* Adjust the width as needed */
+    height: 70%; /* Adjust the height as needed */
+    max-height: 90vh; /* Maximum height based on the viewport height */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 200; /* Ensure it appears above other content */
+    transform: translateX(5%); /* Initially off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .chat-header {
+    background-color: rgb(37,211,102);
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 1rem 1rem 0 0;
+    height: 50%;
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+    font-size: 1.3rem; /* Use rem for font size */
+    height: auto;
+    font-weight: 500;
+  }
+  
+  .chat-body {
+    flex-grow: 1; /* Allow the body to expand and fill the available space */
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .close-button{
+    background-color: rgb(185, 73, 73);
+    color: var(--whiteColor);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: inline;
+    margin-left: 10rem;
+  }
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-right: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .chat-input button {
+    background-color: var(--PrimaryColor);
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    font-size: 1rem; 
+  }
+  
+  .chat-input button:hover {
+    background-color: #44ff1a;
+  }
+  
+  .open-button {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background: transparent;
+    font-weight: 600;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  /* Show the chat when it's open */
+  .whatsapp-chat-container.open {
+    transform: translateX(5%);
+    border: 1px solid #ccc;
+    border-radius: 1rem; /* Rounded left corners */
+    background-color: #ffffffdd;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Dark shadow */
+  }
+  
+  /* Hide close button when the chat is closed */
+  .whatsapp-chat-container:not(.open) .close-button {
+    display: none;
+  }
+  

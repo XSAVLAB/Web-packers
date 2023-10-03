@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import video from "../../Assets/video2.mp4";
-
-// import { FiFacebook } from "react-icons/fi";
-// import { AiOutlineInstagram } from "react-icons/ai";
-// import { BsTwitter } from "react-icons/bs";
-// import { BsListUl } from "react-icons/bs";
-// import { TbApps } from "react-icons/tb";
-
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMobileScreen,faEnvelope, faMapLocationDot} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-regular-svg-icons";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -33,64 +30,22 @@ const Home = () => {
           </h1>
           <h2 data-aos="fade-left">Ready to gooo !! Any Time Any Where !!!</h2>
          <p data-aos="fade-up">
-          Shop No.25/24, Opp.HDFC Bank
+         <a href="G-Map-Location" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faMapLocationDot} style={{ color: 'white',height:'19px',width:'25px' }} /> Shop No.25/24, Opp.HDFC Bank, Rajiv Gandhi Infotech Park, Hinjewadi, Pune- 411057</a> 
          </p>
          <p data-aos="fade-up">
-          Rajiv Gandhi Infotech Park, Hinjewadi, Pune- 411057
+         <a href="mailto:info@welcomepackers.in" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white',height:'19px',width:'25px' }} /> info@welcomepackers.in </a>
          </p>
          <p data-aos="fade-up">
-          Email - info@welcomepackers.in
+          <a href="https://api.whatsapp.com/send?phone=917988145538&text=" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: 'white',height:'19px',width:'25px' }} /> 7988145538 </a> 
          </p>
-         <p data-aos="fade-up">
-          Contact No -  7988145538 , 8888202978
+         <p data-aos="fade-up">  
+          <a href='tel:+91-8888202978' target='_blank' className="linkDecorationNone">
+          <FontAwesomeIcon icon={faMobileScreen} style={{ color: 'white',height:'17px',width:'25px' }} /> 8888202978</a>
          </p>
         </div>
-
-        {/* <div data-aos="fade-up" className="cardDiv grid">
-          <div className="destinationInput">
-            <label htmlFor="city">Our Address Is</label>
-            <div className="input flex">
-              <input type="text" placeholder="Enter name here..." />
-              <GrLocation className="icon" />
-            </div>
-          </div>
-
-          <div className="dateInput">
-            <label htmlFor="date">Select your date</label>
-            <div className="input flex">
-              <input type="date" />
-            </div>
-          </div>
-
-          <div className="priceInput">
-            <div className="label_total flex">
-              <label htmlFor="price"></label>
-              <h3 className="total">$5000</h3>
-            </div>
-            <div className="input flex">
-              <input type="range" max="5000" min="1000" />
-            </div>
-          </div>
-
-          <div className="searchOptions flex">
-            <HiFilter className="icon" />
-            <span>MORE FILTERS</span>
-          </div>
-        </div> */}
-      {/* 
-        <div data-aos="fade-up" className="homeFooterIcons flex">
-          <div className="rightIcons">
-            <FiFacebook className="icon" />
-            <AiOutlineInstagram className="icon" />
-            <BsTwitter className="icon" />
-          </div>
-
-          <div className="leftsIcons">
-            <BsListUl className="icon" />
-            <TbApps className="icon" />
-          </div>
-        </div> */}
-
       </div>
     </section>
   );

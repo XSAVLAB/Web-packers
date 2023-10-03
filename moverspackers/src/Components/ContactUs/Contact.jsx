@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import "./contact.css";
 import video from "../../Assets/video2.mp4";
-// import { FiFacebook } from "react-icons/fi";
-// import { AiOutlineInstagram } from "react-icons/ai";
-// import { BsTwitter } from "react-icons/bs";
-// import { BsListUl } from "react-icons/bs";
-// import { TbApps } from "react-icons/tb";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMobileScreen,faEnvelope, faMapLocationDot} from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-regular-svg-icons";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -23,16 +22,25 @@ const Contact = () => {
 
       <div className="contactContent container">
         <div className="textDiv">
-          <h1 data-aos="fade-right" className="contactTitle">
+          <h1 data-aos="fade-down" className="contactTitle">
             Contact Us
           </h1>
-          <h3 data-aos="fade-up">Contact No - 7988145538, 8888202978</h3>
-          <h3 data-aos="fade-left">Email - info@welcomepackers.in</h3>
-
-          <p data-aos="fade-up">
-            Shop No.25/24, Opp.HDFC Bank, Rajiv Gandhi Infotech Park,
-          </p>
-          <p data-aos="fade-up">Hinjewadi, Pune- 411057</p>
+          <h3 data-aos="fade-down">
+         <a href="G-Map-Location" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faMapLocationDot} style={{ color: 'white',height:'19px',width:'25px' }} /> Shop No.25/24, Opp.HDFC Bank, Rajiv Gandhi Infotech Park, Hinjewadi, Pune- 411057</a>  
+          </h3>
+          <h3 data-aos="fade-down">
+          <a href="https://api.whatsapp.com/send?phone=917988145538&text=" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: 'white',height:'2rem',width:'2rem' }} /> 7988145538 </a>
+          </h3>
+          <h3 data-aos="fade-down">
+          <a href='tel:+91-8888202978' target='_blank' className="linkDecorationNone">
+          <FontAwesomeIcon icon={faMobileScreen} style={{ color: 'white',height:'2rem',width:'2rem' }} /> 8888202978</a>  
+          </h3>
+          <h3 data-aos="fade-left">
+         <a href="mailto:info@welcomepackers.in" className="linkDecorationNone" target="_blank">
+          <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white',height:'2rem',width:'2rem' }} /> info@welcomepackers.in </a>
+          </h3>
         </div>
 
         <div data-aos="fade-up" className="cardDiv grid">
@@ -51,7 +59,7 @@ const Contact = () => {
               <input
                 type="text"
                 pattern="[0-9]{10}"
-                maxlength="10"
+                maxLength={10}
                 placeholder="Enter mobile number here..."
                 required
               />
