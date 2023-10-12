@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose, faComments, faL } from '@fortawesome/free-solid-svg-icons';
 import Chat from 'react-simple-chatbot';
 import { Segment } from 'semantic-ui-react';
-import './ChatBot.css';
+import './chatBot.css';
 
 const ChatBot2 = ({ setIsOpen, isOpen }) => {
   const [userName, setUserName] = useState('');
