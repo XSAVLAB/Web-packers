@@ -27,5 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'moverspackers/package-lock.json'
+    - run: npm ci
+      working-directory: ./moverspackers
     - run: npm run build --if-present
       working-directory: ./moverspackers
